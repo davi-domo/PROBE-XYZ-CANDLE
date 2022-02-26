@@ -241,7 +241,7 @@
         localStorage.setItem("z_probe", z_probe);
         localStorage.setItem("d_fraise", d_fraise);
         // on genere le GCODE
-        let gcode = ";GCODE généré pour un de fraise de diamètre : " + d_fraise + " millimètres\n";
+        let gcode = ";GCODE généré pour une fraise de diamètre : " + d_fraise + " millimètres\n";
         gcode += "G91" + "\n";//position relative
         gcode += "G21" + "\n";// declation en millimetre
         gcode += "G38.2 Z-50 F100" + "\n";// Palpage rapide Z
