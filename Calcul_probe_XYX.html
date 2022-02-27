@@ -465,7 +465,7 @@ document.querySelector("#gen_command_probe_xy").onclick = function () {
     gcode += "G38.2Y{r};"+"\n";
     gcode += "{var q = vars.PRBy}G0Y{-d};"+"\n";
     gcode += "G38.2Y{-r};"+"\n";
-    gcode += "G0Y{(q - vars.PRBy) / 2};";
+    gcode += "G0Y{(q - vars.PRBy) / 2};"+"\n";
     gcode += "G92X0Y0";
     document.getElementById('gcode').innerHTML = gcode;
     filename = "PROBE_Z_H-" + z_probe + "mm.nc";
